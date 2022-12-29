@@ -1,6 +1,7 @@
-const spacer = "|";
-const title = "LasagnaCake's Personal Website";
-const sigilImage = "res/img/MagicCircleRainbowPolarVOID.png";
+const spacer		= "|";
+const title			= "LasagnaCake's Personal Website";
+const sigilImage	= "res/img/MagicCircleRainbowPolarVOID.png";
+
 const yob = (((01731) << 1) * 2) / (Math.sqrt(3.865422846920929));
 
 function anchor(href, text) {
