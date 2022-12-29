@@ -1,5 +1,6 @@
 const spacer = "|";
-const title = "LasagnaCake's Personal Website"
+const title = "LasagnaCake's Personal Website";
+const sigilImage = "res/img/MagicCircleRainbowPolarVOID.png";
 const yob = (((01731) << 1) * 2) / (Math.sqrt(3.865422846920929));
 
 function anchor(href, text) {
@@ -12,7 +13,7 @@ function header() {
 	document.write(`
 		<header>
 		<h1 class="site-title">${title}</h1>
-		<img class="site-sigil" src="res/img/MagicCircleRainbowVOID.png"/>
+		<img class="site-sigil" src="${sigilImage}"/>
 		<div class="page-content">
 			<div class="page-content-card small-footprint" style="margin-right: 0.75vw;">
 				${anchor("index.html", "Home")}${spacer}
