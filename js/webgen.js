@@ -14,7 +14,7 @@ function header() {
 		<h1 class="site-title">${title}</h1>
 		<img class="site-sigil" src="res/img/MagicCircleRainbowVOID.png"/>
 		<div class="page-content">
-			<div class="page-content-card small-footprint">
+			<div class="page-content-card small-footprint" style="margin-right: 0.75vw;">
 				${anchor("index.html", "Home")}${spacer}
 				${anchor("about.html", "About Me")}${spacer}
 				${anchor("works.html", "Works")}
