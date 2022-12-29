@@ -72,7 +72,7 @@ body {
 }
 
 .page-content-card {
-	width: calc(90% - 5px);
+	width: calc(80% - 5px);
 	background-color: midnightblue;
 	border-radius: 10px;
 	font-size: max(25px, 2.5vw);
@@ -136,6 +136,12 @@ body {
 
 .hug-right {
 	float: right;
+}
+
+@media screen and (max-width: 900px) {
+	.page-content-card {
+		width: calc(90% - 5px);
+	}
 }
 
 @media only screen and (max-device-width: 600px) {
