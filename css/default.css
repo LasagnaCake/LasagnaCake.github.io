@@ -107,11 +107,19 @@ body {
 	font-family: tanuki-magic;
 }
 
-.blackout {
-	background-color: rgb(1, 1, 10);
-	border-radius: 5px;
-	border: 5px solid rgb(1, 1, 10);
-	margin-bottom: 10px;
+.blackout-mode {
+	background-color: rgb(1, 1, 10) !important;
+	border: 5px solid rgb(1, 1, 10) !important;
+}
+
+.eclipse-mode {
+	background-color: rgb(16, 16, 70) !important;
+	border: 5px solid rgb(16, 16, 70) !important;
+}
+
+.midnight-mode {
+	background-color: midnightblue !important;
+	border: 5px solid midnightblue !important;
 }
 
 .content-paragraph {
