@@ -152,15 +152,20 @@ body {
 	}
 }
 
-@media only screen and (max-device-width: 600px) {
-	.site-title {
-		font-size: 80px;
-	}
-
+/* WHY THE FUCK ARE HIGH RESOLUTION PHONES A THING? */
+@media only screen and (max-device-width: 1200px) {
 	.sprite {
 		width: 512px;
 	}
-	
+}
+
+@media only screen and (max-device-width: 900px) {
+	.sprite {
+		width: calc(256px * 1.5);
+	}
+}
+
+@media only screen and (max-device-width: 600px) {
 	.site-sigil {
 		margin-top: -710px;
 		width: 750px;
