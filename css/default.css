@@ -138,6 +138,10 @@ body {
 	float: right;
 }
 
+.small-footprint {
+	max-width: 580px;
+}
+
 @media screen and (max-width: 900px) {
 	.page-content-card {
 		width: calc(90% - 5px);

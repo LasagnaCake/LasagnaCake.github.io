@@ -14,13 +14,13 @@ function header() {
 		<h1 class="site-title">${title}</h1>
 		<img class="site-sigil" src="res/img/MagicCircleRainbowVOID.png"/>
 		<div class="page-content">
-			<div class="page-content-card">
+			<div class="page-content-card small-footprint">
 				${anchor("index.html", "Home")}${spacer}
 				${anchor("about.html", "About Me")}${spacer}
 				${anchor("works.html", "Works")}${spacer}
 				${anchor("contact.html", "Contact")}
 			</div>
-			<div class="page-content-card">
+			<div class="page-content-card small-footprint">
 			${anchor("https://lasagnacake.tumblr.com/", "Tumblr")}${spacer}
 			${anchor("https://lasagnacake.bandcamp.com", "Bandcamp")}${spacer}
 			${anchor("https://www.youtube.com/channel/UClnktpZm3iVz7uKRQ8JHhzw", "YouTube")}
