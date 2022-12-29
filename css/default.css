@@ -108,8 +108,8 @@ body {
 }
 
 .blackout-mode {
-	background-color: rgb(1, 1, 10) !important;
-	border: 5px solid rgb(1, 1, 10) !important;
+	background-color: rgb(1, 1, 30) !important;
+	border: 5px solid rgb(1, 1, 30) !important;
 }
 
 .eclipse-mode {
