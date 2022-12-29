@@ -1,0 +1,40 @@
+@import url("../res/fonts/fonts.css");
+
+:root {
+	--center: 0px auto;
+}
+
+@keyframes fade-in {
+	from	{filter: opacity(0%);}
+	to		{filter: opacity(100%);}
+}
+
+@keyframes rotate-ccw {
+	from	{rotate: 180deg;}
+	to		{rotate: 0deg;}
+}
+
+@keyframes rotate-cw {
+	from	{rotate: -360deg;}
+	to		{rotate: 0deg;}
+}
+
+@keyframes slide-left {
+	from	{translate: 50%;}
+	to		{translate: 0%;}
+}
+
+@keyframes slide-right {
+	from	{translate: -50%;}
+	to		{translate: 0%;}
+}
+
+@keyframes slide-up {
+	from	{translate: 0% 20%;}
+	to		{translate: 0%;}
+}
+
+@keyframes slide-down {
+	from	{translate: 0% -20%;}
+	to		{translate: 0%;}
+}
