@@ -17,8 +17,7 @@ function header() {
 			<div class="page-content-card small-footprint">
 				${anchor("index.html", "Home")}${spacer}
 				${anchor("about.html", "About Me")}${spacer}
-				${anchor("works.html", "Works")}${spacer}
-				${anchor("contact.html", "Contact")}
+				${anchor("works.html", "Works")}
 			</div>
 			<div class="page-content-card small-footprint">
 			${anchor("https://lasagnacake.tumblr.com/", "Tumblr")}${spacer}
