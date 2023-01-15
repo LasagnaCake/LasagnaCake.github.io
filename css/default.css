@@ -4,9 +4,9 @@
 :root {
 	--outline-radius:	5px;
 	--or:				var(--outline-radius);
-	--outline-tl:		calc(0px - var(--or)) var(--or) 0px black; 
-	--outline-tr:		var(--or) var(--or) 0px black; 
-	--outline-bl:		var(--or) calc(0px - var(--or)) 0px black; 
+	--outline-tl:		calc(0px - var(--or)) var(--or) 0px black;
+	--outline-tr:		var(--or) var(--or) 0px black;
+	--outline-bl:		var(--or) calc(0px - var(--or)) 0px black;
 	--outline-br:		calc(0px - var(--or)) calc(0px - var(--or)) 0px black;
 	--outline-top:		0px var(--or) 0px black;
 	--outline-bottom:	0px calc(0px - var(--or)) 0px black;
@@ -144,6 +144,12 @@ body {
 
 .sprite {
 	width: 256px;
+}
+
+.inline-code {
+	font-family: lotuscoder;
+	background-color: black;
+	color: white;
 }
 
 @media screen and (max-width: 900px) {
