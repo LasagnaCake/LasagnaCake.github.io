@@ -168,11 +168,8 @@ body {
 
 .inline-code {
 	font-family: courier-prime;
-	background-color: black;
-	border:0px solid black;
-	color: white;
-	border-left-width: 5px;
-	border-right-width: 5px;
+	border-top-width: 0px !important;
+	border-bottom-width: 0px !important;
 }
 
 @media screen and (max-width: 900px) {
