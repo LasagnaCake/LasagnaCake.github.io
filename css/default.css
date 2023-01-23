@@ -167,9 +167,12 @@ body {
 }
 
 .inline-code {
-	font-family: mechanical-font;
+	font-family: courier-prime;
 	background-color: black;
+	border:0px solid black;
 	color: white;
+	border-left-width: 5px;
+	border-right-width: 5px;
 }
 
 @media screen and (max-width: 900px) {
