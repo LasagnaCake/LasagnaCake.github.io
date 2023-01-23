@@ -19,10 +19,10 @@
 	--bold-shadow-in:	var(--shadow-in), var(--shadow-in), var(--shadow-in);
 	--bold-shadow-out:	var(--shadow-out), var(--shadow-out), var(--shadow-out);
 }
-
+/*
 header {
 }
-
+*/
 body {
 	font-family: tanuki-magic;
 	font-size: 20px;
@@ -122,12 +122,32 @@ body {
 	border: 5px solid midnightblue !important;
 }
 
-.content-paragraph {
+.content {
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.paragraph {
 	font-family: yulong;
 	background-color: rgb(16, 16, 70);
-	border-radius: 5px;
 	border: 5px solid rgb(16, 16, 70);
-	margin-bottom: 10px;
+
+}
+
+.code-block {
+	font-family: mechanical;
+}
+
+.dark-mode {
+	background-color: black;
+	border: 5px solid black;
+	color:white;
+}
+
+.light-mode {
+	background-color: white;
+	border: 5px solid white;
+	color:black;
 }
 
 .hug-left {
@@ -147,7 +167,7 @@ body {
 }
 
 .inline-code {
-	font-family: lotuscoder;
+	font-family: mechanical-font;
 	background-color: black;
 	color: white;
 }
