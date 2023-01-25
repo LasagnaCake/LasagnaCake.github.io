@@ -134,8 +134,8 @@ body {
 
 }
 
-.code-block {
-	font-family: mechanical;
+.code {
+	font-family: courier-prime, mechanical, 'courier-new', monospace;
 }
 
 .dark-mode {
@@ -166,8 +166,7 @@ body {
 	width: 256px;
 }
 
-.inline-code {
-	font-family: courier-prime;
+.inline {
 	border-top-width: 0px !important;
 	border-bottom-width: 0px !important;
 }

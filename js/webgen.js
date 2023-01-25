@@ -13,8 +13,27 @@ function anchor(href, text) {
 function header() {
 	document.write(`
 		<header>
-		<h1 class="site-title">${title}</h1>
-		<img class="site-sigil" src="${sigilImage}"/>
+			<h1 class="site-title">${title}</h1>
+			<img class="site-sigil" src="${sigilImage}"/>
+			<div class="page-content">
+				<div class="page-content-card small-footprint" style="margin-right: 0.75vw;">
+					${anchor("index.html", "Home")}${spacer}
+					${anchor("about.html", "About Me")}${spacer}
+					${anchor("works.html", "Works")}
+				</div>
+				<div class="page-content-card small-footprint">
+				${anchor("https://lasagnacake.tumblr.com/", "Tumblr")}${spacer}
+				${anchor("https://lasagnacake.bandcamp.com", "Bandcamp")}${spacer}
+				${anchor("https://www.youtube.com/channel/UClnktpZm3iVz7uKRQ8JHhzw", "YouTube")}
+				</div>
+			</div>
+		</header>
+	`);
+}
+
+function footer() {
+	document.write(`
+	<footer>
 		<div class="page-content">
 			<div class="page-content-card small-footprint" style="margin-right: 0.75vw;">
 				${anchor("index.html", "Home")}${spacer}
@@ -25,9 +44,9 @@ function header() {
 			${anchor("https://lasagnacake.tumblr.com/", "Tumblr")}${spacer}
 			${anchor("https://lasagnacake.bandcamp.com", "Bandcamp")}${spacer}
 			${anchor("https://www.youtube.com/channel/UClnktpZm3iVz7uKRQ8JHhzw", "YouTube")}
+			</div>
 		</div>
-		</div>
-		</header>
+	</footer>
 	`);
 }
 
