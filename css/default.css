@@ -134,8 +134,14 @@ body {
 
 }
 
-.code {
+code {
 	font-family: courier-prime, mechanical, 'courier-new', monospace;
+	font-size: xx-large
+}
+
+.code-block {
+	font-family: courier-prime, mechanical, 'courier-new', monospace;
+	font-size: xx-large
 }
 
 .dark-mode {
