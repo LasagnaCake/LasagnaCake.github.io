@@ -1,4 +1,4 @@
-const spacer		= "";
+const spacer		= " ";
 const title			= "LasagnaCake's Personal Website";
 const sigilImage	= "res/img/MagicCircleRainbowPolarVOID.png";
 
