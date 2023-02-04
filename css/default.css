@@ -34,6 +34,17 @@ body {
 	justify-content: center;
 }
 
+a {
+	color:rgb(90, 90, 255);
+}
+
+hr {
+	background-color: rgb(160, 160, 255);
+	border: 2px solid rgb(160, 160, 255);
+	width: 99%;
+	border-radius: 2px;
+}
+
 .site-sigil {
 	z-index: 0;
 	width: max(256px, 30vw);
