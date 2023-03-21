@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image to Base64</title>
+</head>
+<body>
+	<center>
+		<input type="file" id="input" accept="image/*"><br><br>
+		<textarea id="output" rows="10" cols="80" readonly></textarea><br><br>
+		<img id="imgview" width="255px"/>
+	</center>
+	<script>
+		"use strict";
+		function convert(event) {
+			const file = event.target.files[0];
+			const reader = new FileReader();
+			reader.onloadend = () => {
+				output.value = reader.result;
+				imgview.src = reader.result;
+			};
+			reader.readAsDataURL(file);
+		};
+		document.getElementById("input").addEventListener("change", convert);
+	</script>
+</body>
+</html>
