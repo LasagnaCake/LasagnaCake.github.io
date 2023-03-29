@@ -97,3 +97,13 @@
 	font-family: mahou-futo-maru-gothic;
 	src: url("madou-futo-maru-gothic-font/MadouFutoMaruGothic-d9Xo7.ttf");
 }
+
+@font-face {
+	font-family: u001;
+	src: url("u001-font/u001-reg.ttf");
+}
+
+@font-face {
+	font-family: u001-condensed;
+	src: url("u001-font/u001-con.ttf");
+}
