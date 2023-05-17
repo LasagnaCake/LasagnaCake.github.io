@@ -14,10 +14,10 @@ body {
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
 	font-family: powerr-font, Arial;
-	font-size: 2vw;
+	font-size: 4vh;
 	display: flexbox;
 	text-align: center;
-	word-spacing: 1.5vw;
+	word-spacing: 1.5vh;
 }
 
 a {
@@ -31,9 +31,9 @@ a:hover {
 }
 
 .header-anchor {
-	font-size: 4vw;
+	font-size: 6.5vh;
 	color: var(--primary-color);
-	margin-inline: 5vw 5vw;
+	margin-inline: 2vw 2vw;
 }
 
 .header-anchor:hover {
@@ -41,10 +41,12 @@ a:hover {
 }
 
 .social-anchor {
+	font-size: 4vw;
 	background-color: var(--primary-button-color);
-	border: 1vw solid var(--primary-button-color);
+	border: 1vh solid var(--primary-button-color);
 	color: var(--primary-color);
-	border-radius: 1vw;
+	border-radius: 1vh;
+	margin-inline: -.75vh -.75vh;
 }
 
 .social-anchor:hover {
@@ -55,7 +57,7 @@ header {
 	position: fixed;
 	width: 100%;
 	margin-top: auto;
-	border-bottom: .3vw solid var(--accent-color);
+	border-bottom: .3vh solid var(--accent-color);
 	background-color: var(--secondary-color);
 	z-index: 10;
 }
@@ -65,57 +67,91 @@ header {
 	width: 100%;
 	height: 2vh;
 	margin-top: -2vh;
-	border-bottom: .3vw solid var(--accent-color);
+	border-bottom: .3vh solid var(--accent-color);
 	background-color: var(--secondary-color);
 	z-index: 10;
 }
 
 p {
-	text-align: justify;
-	margin-inline: 1.5vw 1.5vw;
+	text-align: left;
+	margin-inline: 1vw 1vw;
 }
 
 .billboard {
-	margin-top: 6vw;
-	margin-bottom: 5vw;
-	font-size: 7vw;
+	margin-top: 7.5vh;
+	margin-bottom: 5vh;
+	font-size: 7vh;
 	animation: slide-down 1s ease;
 }
 
 .bandcamp-album {
 	border: none;
 	border: 0;
-	width: 45%;
+	width: max(40vh, 45%);
 	height: 120px;
 }
 
 .album-container{
-	align-items: flex-start;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
 }
 
 .page {
-	font-size: 3vw;
+	font-size: 3vh;
 }
 
 .card {
-	padding: 2vw;
-	border-radius: 2.5vw;
+	padding: 2vh;
+	border-radius: 2.5vh;
 	background-color: var(--secondary-color);
-	border: 1vw solid var(--accent-color);
-	margin-inline: 10vw 10vw;
-	margin-block: 2vw;
+	border: 1vh solid var(--accent-color);
+	margin-inline: 10vh 10vh;
+	margin-block: 2vh;
 }
 
 bbtext {
-	padding: 2vw;
-	border-radius: 2.5vw;
+	padding: 2vh;
+	border-radius: 2.5vh;
 	background-color: var(--secondary-color);
-	border: 1vw solid var(--accent-color);
+	border: 1vh solid var(--accent-color);
 }
 
 .sprite {
-	width: 20vw;
-	height: 20vw;
-	margin-left: 5vw;
-	margin-right: 5vw;
+	width: max(20vw, 20vh);
+	height: max(20vw, 20vh);
+	margin-left: 5vh;
+	margin-right: 5vh;
+}
+
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+	.billboard {
+		margin-top: 15vh;
+	}
+
+	.header-anchor {
+		font-size: 12vw;
+		margin-inline: 2vw 2vw;
+	}
+
+	.social-anchor {
+		font-size: 4vh;
+		display: inline-block;
+		border: 1vw solid var(--primary-button-color);
+		padding: 3vh 0;
+		width: 100%;
+	}
+
+	.card {
+		margin-inline: 5vw 5vw;
+		margin-block: 2vh;
+	}
+
+	.socials-card {
+		flex-direction: column;
+		word-spacing: 2vh;
+	}
 }
