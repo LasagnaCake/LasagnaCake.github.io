@@ -153,6 +153,7 @@ bbtext {
 	.socials-card {
 		flex-direction: column;
 		word-spacing: 2vh;
+		padding-top: 5vh;
 	}
 
 	.social-anchor {
