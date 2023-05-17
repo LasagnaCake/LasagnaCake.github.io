@@ -170,3 +170,9 @@ bbtext {
 		margin-block: 2vh;
 	}
 }
+
+@media screen and (max-width: 200px), screen and (max-device-width: 200px) {
+	.header-anchor {
+		font-size: 3vh;
+	}
+}
