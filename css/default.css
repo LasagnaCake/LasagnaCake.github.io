@@ -140,7 +140,7 @@ bbtext {
 	margin-right: 5vh;
 }
 
-@media screen and (max-width: 700px), screen and (max-device-width: 900px) {
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
 	.billboard {
 		margin-top: 30%;
 	}
