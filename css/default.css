@@ -40,13 +40,35 @@ a:hover {
 	filter: brightness(var(--hover-hilight));
 }
 
+.card {
+	padding: 2vh;
+	border-radius: 2.5vh;
+	background-color: var(--secondary-color);
+	border: 1vh solid var(--accent-color);
+	margin-inline: 10vh 10vh;
+	margin-block: 2vh;
+}
+
+.socials-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+	min-height: 20vh;
+	word-spacing: 1%;
+}
+
 .social-anchor {
-	font-size: 4vw;
+	font-size: 4vh;
+	display: inline-block;
+	width: 42%;
 	background-color: var(--primary-button-color);
 	border: 1vh solid var(--primary-button-color);
 	color: var(--primary-color);
 	border-radius: 1vh;
-	margin-inline: -.75vh -.75vh;
+	margin-inline: 1vh 1vh;
 }
 
 .social-anchor:hover {
@@ -93,7 +115,7 @@ p {
 
 .album-container{
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
@@ -102,15 +124,6 @@ p {
 
 .page {
 	font-size: 3vh;
-}
-
-.card {
-	padding: 2vh;
-	border-radius: 2.5vh;
-	background-color: var(--secondary-color);
-	border: 1vh solid var(--accent-color);
-	margin-inline: 10vh 10vh;
-	margin-block: 2vh;
 }
 
 bbtext {
@@ -127,9 +140,9 @@ bbtext {
 	margin-right: 5vh;
 }
 
-@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+@media screen and (max-width: 700px), screen and (max-device-width: 900px) {
 	.billboard {
-		margin-top: 15vh;
+		margin-top: 30%;
 	}
 
 	.header-anchor {
@@ -137,21 +150,21 @@ bbtext {
 		margin-inline: 2vw 2vw;
 	}
 
+	.socials-card {
+		flex-direction: column;
+		word-spacing: 2vh;
+	}
+
 	.social-anchor {
-		font-size: 4vh;
+		font-size: 3.5vh;
 		display: inline-block;
+		width: 85%;
 		border: 1vw solid var(--primary-button-color);
 		padding: 3vh 0;
-		width: 100%;
 	}
 
 	.card {
 		margin-inline: 5vw 5vw;
 		margin-block: 2vh;
-	}
-
-	.socials-card {
-		flex-direction: column;
-		word-spacing: 2vh;
 	}
 }
