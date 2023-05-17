@@ -162,6 +162,7 @@ bbtext {
 		width: 85%;
 		border: 1vw solid var(--primary-button-color);
 		padding: 3vh 0;
+		margin-bottom: 3vh;
 	}
 
 	.card {
