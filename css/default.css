@@ -2,273 +2,98 @@
 @import url("core.css");
 
 :root {
-	--outline-radius:	5px;
-	--or:				var(--outline-radius);
-	--outline-tl:		calc(0px - var(--or)) var(--or) 0px black;
-	--outline-tr:		var(--or) var(--or) 0px black;
-	--outline-bl:		var(--or) calc(0px - var(--or)) 0px black;
-	--outline-br:		calc(0px - var(--or)) calc(0px - var(--or)) 0px black;
-	--outline-top:		0px var(--or) 0px black;
-	--outline-bottom:	0px calc(0px - var(--or)) 0px black;
-	--outline-left:		calc(0px - var(--or)) 0px 0px black;
-	--outline-right:	var(--or) 0px 0px black;
-	--outline:			var(--outline-tl), var(--outline-tr), var(--outline-bl), var(--outline-br), var(--outline-top), var(--outline-bottom), var(--outline-left), var(--outline-right);
-	--shadow-radius:	10px;
-	--shadow-in:		0px 0px calc(0px - var(--shadow-radius)) black;
-	--shadow-out:		0px 0px var(--shadow-radius) black;
-	--bold-shadow-in:	var(--shadow-in), var(--shadow-in), var(--shadow-in);
-	--bold-shadow-out:	var(--shadow-out), var(--shadow-out), var(--shadow-out);
+	--primary-color: #ffffff;
+    --secondary-color: #000020; 
+    --primary-button-color: #9e3eff;
+    --secondary-button-color: #cdc6ff;
+    --accent-color: #3344d9;
 }
-/*
-header {
-}
-*/
+
 body {
-	font-family: tanuki-magic;
-	font-size: 20px;
-	color: white;
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-family: powerr-font, Arial;
+	font-size: 2vw;
+	display: flexbox;
 	text-align: center;
-	background-color: rgb(15, 15, 75);
-	background-image: url("../res/img/backgrounds/background7.jpg");
-	background-size: cover;
-	justify-content: center;
+	word-spacing: 1.5vw;
 }
 
 a {
-	color:rgb(90, 90, 255);
-}
-
-hr {
-	background-color: rgb(160, 160, 255);
-	border: 2px solid rgb(160, 160, 255);
-	width: 99%;
-	border-radius: 2px;
-}
-
-.site-sigil {
-	z-index: 0;
-	width: max(256px, 30vw);
-	margin-top: min(-145px, -19vw);
-	margin-bottom: -256px;
-	float: left;
-	aspect-ratio: 1 / 1;
-	animation: ease-out forwards 1s;
-	animation-name: fade-in, rotate-ccw, slide-left;
-}
-
-.site-title {
-	z-index: 100;
-	font-size: max(39px, 5vw);
-	margin-top: max(35px, 5vw);
-	margin-bottom: 20px;
-	width: 100%;
-	text-shadow: var(--bold-shadow-out), var(--bold-shadow-out);
-	font-family: mono-font;
-	animation: ease-out forwards 1s;
-	animation-delay: 0.2s;
-	filter: opacity(0%);
-	animation-name: fade-in, slide-up;
-	position: relative;
-}
-
-.page-content {
-	display: flex;
-	justify-content: center;
-	justify-items: center;
-	justify-self: center;
-	align-content: center;
-	align-items: center;
-	align-self: center;
-	width: 100%;
-}
-
-.page-content-card {
-	width: calc(80% - 5px);
-	background-color: midnightblue;
-	border-radius: 10px;
-	font-size: max(25px, 2.5vw);
-	padding: 10px;
-	position: relative;
-	margin: 5px;
-	align-content: center;
-	justify-content: center;
-	box-shadow: var(--bold-shadow-out);
-}
-
-.link-anchor {
-	border: 0px;
-	background-color: transparent;
-	font-size: inherit;
-	font-weight: inherit;
-	color: inherit;
 	text-decoration: none;
+	color: var(--primary-color);
+	transition: filter .25s;
 }
 
-.bandcamp-album {
-	border: 0;
-	width: min(100%, 700px);
-	height: 120px;
+.header-anchor {
+	font-size: 4vw;
+	margin-inline: 5vw 5vw;
 }
 
-.content-blurb {
-	font-family: powerr-font;
+.social-anchor {
+	background-color: var(--primary-button-color);
+	border: 1vw solid var(--primary-button-color);
+	border-radius: 1vw;
 }
 
-.content-title {
-	font-family: tanuki-magic;
+a:hover {
+	filter: brightness(50%);
 }
 
-.blackout-mode {
-	background-color: rgb(1, 1, 30) !important;
-	border: 5px solid rgb(1, 1, 30) !important;
+header {
+	position: fixed;
+	width: 100%;
+	margin-top: auto;
+	border-bottom: .3vw solid var(--accent-color);
+	background-color: var(--secondary-color);
+	z-index: 10;
 }
 
-.eclipse-mode {
-	background-color: rgb(16, 16, 70) !important;
-	border: 5px solid rgb(16, 16, 70) !important;
+.padder {
+	position: fixed;
+	width: 100%;
+	height: 2vh;
+	margin-top: -2vh;
+	border-bottom: .3vw solid var(--accent-color);
+	background-color: var(--secondary-color);
+	z-index: 10;
 }
 
-.midnight-mode {
-	background-color: midnightblue !important;
-	border: 5px solid midnightblue !important;
+p {
+	text-align: justify;
+	margin-inline: 1.5vw 1.5vw;
 }
 
-.content {
-	border-radius: 5px;
-	margin-bottom: 10px;
+.billboard {
+	margin-top: 6vw;
+	margin-bottom: 5vw;
+	font-size: 7vw;
+	animation: slide-down 1s ease;
 }
 
-.paragraph {
-	font-family: yulong;
-	background-color: rgb(16, 16, 70);
-	border: 5px solid rgb(16, 16, 70);
-
+.page {
+	font-size: 3vw;
 }
 
-code {
-	font-family: courier-prime, mechanical, 'courier-new', monospace;
-	font-size: xx-large
+.card {
+	padding: 2vw;
+	border-radius: 2.5vw;
+	background-color: var(--secondary-color);
+	border: 1vw solid var(--accent-color);
+	margin-inline: 10vw 10vw;
+	margin-block: 2vw;
 }
 
-.code-block {
-	font-family: courier-prime, mechanical, 'courier-new', monospace;
-	font-size: xx-large
-}
-
-.dark-mode {
-	background-color: black;
-	border: 5px solid black;
-	color:white;
-}
-
-.light-mode {
-	background-color: white;
-	border: 5px solid white;
-	color:black;
-}
-
-.hug-left {
-	float: left;
-}
-
-.hug-right {
-	float: right;
-}
-
-.small-footprint {
-	max-width: 580px;
+bbtext {
+	padding: 2vw;
+	border-radius: 2.5vw;
+	background-color: var(--secondary-color);
+	border: 1vw solid var(--accent-color);
 }
 
 .sprite {
-	width: 256px;
+	width: 20vw;
+	height: 20vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
-
-.inline {
-	border-top-width: 0px !important;
-	border-bottom-width: 0px !important;
-}
-
-@media screen and (max-width: 900px) {
-	.page-content-card {
-		width: calc(90% - 5px);
-	}
-}
-
-/* WHY THE FUCK ARE HIGH RESOLUTION PHONES A THING? */
-@media only screen and (max-device-width: 1200px) {
-	.sprite {
-		width: 512px;
-	}
-}
-
-@media only screen and (max-device-width: 900px) {
-	.sprite {
-		width: calc(256px * 1.5);
-	}
-}
-
-@media only screen and (max-device-width: 600px) {
-	.site-sigil {
-		margin-top: -710px;
-		width: 750px;
-	}
-
-	.page-content-card {
-		font-size: 50px;
-		width: 100%;
-		border-radius: 0px;
-		margin-left: 1.5px;
-		margin-right: 1.5px;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-}
-
-@media only screen and (max-device-width: 400px) {
-	.site-title {
-		font-size: 120px;
-	}
-	
-	.site-sigil {
-		margin-top: -480px;
-		width: 500px;
-	}
-
-	.page-content-card {
-		font-size: 75px;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-device-width: 380px) {
-	.site-title {
-		font-size: 45px;
-	}
-	
-	.site-sigil {
-		margin-top: -220px;
-		width: 250px;
-	}
-
-	.page-content-card {
-		font-size: 20px;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-device-width: 360px) {
-	.site-title {
-		font-size: 120px;
-	}
-	
-	.site-sigil {
-		margin-top: -480px;
-		width: 500px;
-	}
-
-	.page-content-card {
-		font-size: 75px;
-		width: 100%;
-	}
-}
-

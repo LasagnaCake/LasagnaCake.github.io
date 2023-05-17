@@ -9,6 +9,11 @@
 	to		{filter: opacity(100%);}
 }
 
+@keyframes darken {
+	from	{filter: brightness(100%);}
+	to		{filter: brightness(50%);}
+}
+
 @keyframes rotate-ccw {
 	from	{rotate: 180deg;}
 	to		{rotate: 0deg;}
@@ -20,21 +25,21 @@
 }
 
 @keyframes slide-left {
-	from	{translate: 50%;}
-	to		{translate: 0%;}
+	from	{translate: 50vw;}
+	to		{translate: 0vw;}
 }
 
 @keyframes slide-right {
-	from	{translate: -50%;}
-	to		{translate: 0%;}
+	from	{translate: -50vw;}
+	to		{translate: 0vw;}
 }
 
 @keyframes slide-up {
-	from	{translate: 0% 20%;}
-	to		{translate: 0%;}
+	from	{translate: 0vw 20vw;}
+	to		{translate: 0vw;}
 }
 
 @keyframes slide-down {
-	from	{translate: 0% -20%;}
-	to		{translate: 0%;}
+	from	{translate: 0vw -20vw;}
+	to		{translate: 0vw;}
 }
