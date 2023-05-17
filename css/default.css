@@ -21,18 +21,20 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--primary-color);
+	color: var(--primary-button-color);
 	transition: filter .25s;
 }
 
 .header-anchor {
 	font-size: 4vw;
+	color: var(--primary-color);
 	margin-inline: 5vw 5vw;
 }
 
 .social-anchor {
 	background-color: var(--primary-button-color);
 	border: 1vw solid var(--primary-button-color);
+	color: var(--primary-color);
 	border-radius: 1vw;
 }
 
@@ -69,6 +71,17 @@ p {
 	margin-bottom: 5vw;
 	font-size: 7vw;
 	animation: slide-down 1s ease;
+}
+
+.bandcamp-album {
+	border: none;
+	border: 0;
+	width: 45%;
+	height: 120px;
+}
+
+.album-container{
+	align-items: flex-start;
 }
 
 .page {
