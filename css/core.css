@@ -14,6 +14,11 @@
 	to		{filter: brightness(50%);}
 }
 
+@keyframes lighten {
+	from	{filter: brightness(100%);}
+	to		{filter: brightness(150%);}
+}
+
 @keyframes rotate-ccw {
 	from	{rotate: 180deg;}
 	to		{rotate: 0deg;}

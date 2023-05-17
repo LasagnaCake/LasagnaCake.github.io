@@ -4,9 +4,10 @@
 :root {
 	--primary-color: #ffffff;
     --secondary-color: #000020; 
-    --primary-button-color: #9e3eff;
-    --secondary-button-color: #cdc6ff;
+    --primary-button-color: #9d3cff;
+    --secondary-button-color: #ac79ff;
     --accent-color: #3344d9;
+	--hover-hilight: 50%;
 }
 
 body {
@@ -21,14 +22,22 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--primary-button-color);
+	color: var(--secondary-button-color);
 	transition: filter .25s;
+}
+
+a:hover {
+	filter: brightness(calc(100% + var(--hover-hilight)));
 }
 
 .header-anchor {
 	font-size: 4vw;
 	color: var(--primary-color);
 	margin-inline: 5vw 5vw;
+}
+
+.header-anchor:hover {
+	filter: brightness(var(--hover-hilight));
 }
 
 .social-anchor {
@@ -38,8 +47,8 @@ a {
 	border-radius: 1vw;
 }
 
-a:hover {
-	filter: brightness(50%);
+.social-anchor:hover {
+	filter: brightness(var(--hover-hilight));
 }
 
 header {
