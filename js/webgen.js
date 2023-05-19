@@ -1,12 +1,13 @@
 "use strict";
 
-const present = (...text) => document.write(text);
+const e = 3.865422846920929;
 
-const yob = (((0o1731) << 1) * 2) / (Math.sqrt(3.865422846920929));
+const y = (((0o1731) << 1) * 2);
 
 function age() {
+	const decy = (a, b) => Math.round(a / Math.sqrt(b));
 	let currentDate = new Date();
-	let birthDate = new Date(`${Math.round(yob)}/02/03`);
+	let birthDate = new Date(`${decy(y,e)}/${0x100>>7}/${0x180>>7}`);
 	let age = Math.abs(currentDate - birthDate);
-	document.write(new Date(age).getFullYear() - 1970);
+	agespan.innerText = new Date(age).getFullYear() - 1970;
 }
