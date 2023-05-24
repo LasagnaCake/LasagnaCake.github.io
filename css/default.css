@@ -59,6 +59,8 @@ dialog {
 	color: var(--primary-color);
 	position: fixed;
 	margin: 0px auto;
+	width: 75%;
+	max-width: 320px;
 	top: 50%;
 	z-index: 50;
 }
@@ -175,8 +177,6 @@ bbtext {
 .sprite {
 	width: max(20vw, 20vh);
 	height: max(20vw, 20vh);
-	margin-left: 5vh;
-	margin-right: 5vh;
 }
 
 @media screen and (max-width: 900px), screen and (max-device-width: 900px) {
