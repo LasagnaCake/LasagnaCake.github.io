@@ -5,12 +5,15 @@
 
 :root {
 	--hover-hilight: 50%;
-	--border-color: var(--primary-accent-color);
+    --body-background-color: var(--secondary-color);
+	/*--border-color: var(--primary-accent-color);
+	--accent-color: var(--secondary-accent-color);*/
 	--border-color: var(--secondary-accent-color);
+	--popup-color: var(--primary-accent-color);
 }
 
 body {
-	background-color: var(--secondary-color);
+	background-color: var(--body-background-color);
 	color: var(--primary-color);
 	font-family: powerr-font, Arial;
 	font-size: 4vh;
@@ -46,6 +49,43 @@ a:hover {
 	border: 1vh solid var(--border-color);
 	margin-inline: 10vh 10vh;
 	margin-block: 2vh;
+}
+
+dialog {
+	padding: 2vh;
+	border-radius: 1.5vh;
+	background-color: var(--secondary-color);
+	border: 1vh solid var(--popup-color);
+	color: var(--primary-color);
+	position: fixed;
+	margin: 0px auto;
+	top: 50%;
+	z-index: 50;
+}
+
+button {
+	background-color: var(--primary-button-color);
+	color: var(--primary-color);
+	border-radius: 1.5vw;
+	border-color: var(--primary-button-color);
+	border-style: solid;
+	margin-inline: 1vw;
+	font-size: 3vh;
+	transition: filter .25s;
+}
+
+button:hover {
+	filter: brightness(var(--hover-hilight));
+}
+
+button:active {
+	filter: brightness(var(--hover-hilight));
+	transition: none;
+}
+
+button:disabled {
+	filter: brightness(0.75) grayscale(0.75);
+	transition: none;
 }
 
 .socials-card {
