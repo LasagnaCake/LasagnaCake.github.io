@@ -68,7 +68,7 @@ dialog {
 button {
 	background-color: var(--primary-button-color);
 	color: var(--primary-color);
-	border-radius: 1.5vw;
+	border-radius: 1svh;
 	border-color: var(--primary-button-color);
 	border-style: solid;
 	margin-inline: 1vw;
