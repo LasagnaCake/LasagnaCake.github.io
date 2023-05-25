@@ -12,6 +12,11 @@
 	--popup-color: var(--primary-accent-color);
 }
 
+hr {
+	border: 0.5vh solid var(--border-color);
+	background-color: var(--border-color);
+}
+
 body {
 	background-color: var(--body-background-color);
 	color: var(--primary-color);
@@ -51,6 +56,14 @@ a:hover {
 	margin-block: 2vh;
 }
 
+.game-title {
+	background-color: var(--border-color);
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	border-radius: 2vw;
+	margin-inline: 5vw 5vw;
+}
+
 dialog {
 	padding: 2vh;
 	border-radius: 2.5vh;
@@ -64,6 +77,10 @@ dialog {
 	top: 25vh;
 	z-index: 50;
 	animation: fade-in .25s ease;
+}
+
+li {
+	text-align: left;
 }
 
 button {
@@ -170,7 +187,7 @@ p {
 	font-size: 3vh;
 }
 
-bbtext {
+.bbtext {
 	padding: 2vh;
 	border-radius: 2.5vh;
 	background-color: var(--secondary-color);
