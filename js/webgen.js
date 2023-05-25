@@ -7,7 +7,7 @@ const y = (((0o1731) << 1) * 2);
 function age() {
 	const decy = (a, b) => Math.round(a / Math.sqrt(b));
 	let currentDate = new Date();
-	let birthDate = new Date(`${decy(y,e)}/${0x100>>7}/${0x180>>7}`);
+	let birthDate = new Date(`${decy(y,e)}/${0x100>>7}/${0o300>>6}`);
 	let age = Math.abs(currentDate - birthDate);
 	agespan.innerText = new Date(age).getFullYear() - 1970;
 }
@@ -20,7 +20,7 @@ function createModal(id, text, buttonData = [{text:"ok",action:()=>{}}]) {
 	buttons.className = id + "-buttons";
 	buttonData.forEach(btn => {
 		let button = document.createElement("button");
-		button.innerText	= bd.text;
+		button.innerText	= btn.text;
 		button.onclick		= (e) => {btn.action(); modal.close()};
 		buttons.appendChild(button);
 	});
