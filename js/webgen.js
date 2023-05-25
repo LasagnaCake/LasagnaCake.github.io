@@ -12,7 +12,7 @@ function age() {
 	agespan.innerText = new Date(age).getFullYear() - 1970;
 }
 
-const createModal = (id, text, buttonData = [{text:"ok",action:()=>{}}]) => {
+function createModal(id, text, buttonData = [{text:"ok",action:()=>{}}]) {
 	let modal = document.createElement("dialog");
 	modal.id = id;
 	modal.innerText = text;
