@@ -1,18 +1,6 @@
 "use strict";
 
-const e = 3.865422846920929;
-
-const y = (((0o1731) << 1) * 2);
-
-function age() {
-	const decy = (a, b) => Math.round(a / Math.sqrt(b));
-	let currentDate = new Date();
-	let birthDate = new Date(`${decy(y,e)}/${0x100>>7}/${0o300>>6}`);
-	let age = Math.abs(currentDate - birthDate);
-	agespan.innerText = new Date(age).getFullYear() - 1970;
-}
-
-function createModal(id, text, buttonData = [{text:"ok",action:()=>{}}]) {
+function createModal(id, text, buttonData = [{text:"OK",action:()=>{}}]) {
 	let modal = document.createElement("dialog");
 	modal.id = id;
 	modal.innerText = text;
@@ -26,15 +14,30 @@ function createModal(id, text, buttonData = [{text:"ok",action:()=>{}}]) {
 	});
 	modal.onclose = (e) => {modal.remove()};
 	modal.appendChild(buttons);
-	document.body.appendChild(modal);
-	modal.showModal();
 	return modal;
 }
 
 const Modal = {
-	"custom": createModal,
+	"custom": (id, text, buttonData = [{text:"OK",action:()=>{}}]) => {
+		let modal = createModal(id, text, buttonData);
+		document.body.appendChild(modal);
+		modal.showModal();
+		return modal;
+	},
+	"ok": (id, text, onOK = ()=>{}) => {
+		let modal = createModal(
+			id,
+			text, [{
+				text: "OK",
+				action: onOK
+			}]
+		);
+		document.body.appendChild(modal);
+		modal.showModal();
+		return modal;
+	},
 	"yesNo": (id, text, onYes = ()=>{}, onNo = ()=>{}) => {
-		return createModal(
+		let modal = createModal(
 			id,
 			text, [{
 				text: "YES",
@@ -44,9 +47,12 @@ const Modal = {
 				action: onNo
 			}
 		]);
+		document.body.appendChild(modal);
+		modal.showModal();
+		return modal;
 	},
 	"yesNoCancel": (id, text, onYes = ()=>{}, onNo = ()=>{}, onCancel = ()=>{}) => {
-		return createModal(
+		let modal = createModal(
 			id,
 			text, [{
 				text: "YES",
@@ -59,5 +65,8 @@ const Modal = {
 				action: onCancel
 			}
 		]);
+		document.body.appendChild(modal);
+		modal.showModal();
+		return modal;
 	}
 };
