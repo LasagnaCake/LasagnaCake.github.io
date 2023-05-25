@@ -1,45 +1,52 @@
 "use strict";
 
-function createModal(id, text, buttonData = [{text:"OK",action:()=>{}}]) {
-	let modal = document.createElement("dialog");
-	modal.id = id;
-	modal.innerText = text;
-	let buttons = document.createElement("div");
-	buttons.className = id + "-buttons";
-	buttonData.forEach(btn => {
-		let button = document.createElement("button");
-		button.innerText	= btn.text;
-		button.onclick		= (e) => {btn.action(); modal.close()};
-		buttons.appendChild(button);
-	});
-	modal.onclose = (e) => {modal.remove()};
-	modal.appendChild(buttons);
-	return modal;
-}
+class Modal {
+	static create(id, buttonData = [{text:"OK",action:()=>{}}]) {
+		// Create modal
+		let modal = document.createElement("dialog");
+		modal.id = id;
+		// Create modal's content div
+		let content = document.createElement("div");
+		content.classList.add(id + "-content");
+		// Create buttons div
+		let buttons = document.createElement("div");
+		buttons.classList.add(id + "-buttons");
+		// Create modal buttons
+		buttonData.forEach(btn => {
+			let button = document.createElement("button");
+			button.innerText	= btn.text;
+			button.onclick		= (e) => {btn.action(); modal.close()};
+			buttons.appendChild(button);
+		});
+		// Set operation
+		modal.onclose = (e) => {modal.remove()};
+		// Append divs
+		modal.appendChild(content);
+		modal.appendChild(document.createElement("br"));
+		modal.appendChild(buttons);
+		// Return modal & content div
+		return [modal, content];
+	}
 
-const Modal = {
-	"custom": (id, text, buttonData = [{text:"OK",action:()=>{}}]) => {
-		let modal = createModal(id, text, buttonData);
+	static custom(id, buttonData = [{text:"OK",action:()=>{}}]) {
+		let [modal, content] = this.create(id, buttonData);
 		document.body.appendChild(modal);
 		modal.showModal();
-		return modal;
-	},
-	"ok": (id, text, onOK = ()=>{}) => {
-		let modal = createModal(
-			id,
-			text, [{
+		return [modal, content];
+	}
+
+	static ok(id, onOK = ()=>{}) {
+		return this.custom(
+			id, [{
 				text: "OK",
 				action: onOK
 			}]
 		);
-		document.body.appendChild(modal);
-		modal.showModal();
-		return modal;
-	},
-	"yesNo": (id, text, onYes = ()=>{}, onNo = ()=>{}) => {
-		let modal = createModal(
-			id,
-			text, [{
+	}
+
+	static yesNo(id, onYes = ()=>{}, onNo = ()=>{}) {
+		return this.custom(
+			id, [{
 				text: "YES",
 				action: onYes
 			}, {
@@ -47,14 +54,11 @@ const Modal = {
 				action: onNo
 			}
 		]);
-		document.body.appendChild(modal);
-		modal.showModal();
-		return modal;
-	},
-	"yesNoCancel": (id, text, onYes = ()=>{}, onNo = ()=>{}, onCancel = ()=>{}) => {
-		let modal = createModal(
-			id,
-			text, [{
+	}
+
+	static yesNoCancel(id, onYes = ()=>{}, onNo = ()=>{}, onCancel = ()=>{}) {
+		return Modal.custom(
+			id, [{
 				text: "YES",
 				action: onYes
 			}, {
@@ -65,8 +69,5 @@ const Modal = {
 				action: onCancel
 			}
 		]);
-		document.body.appendChild(modal);
-		modal.showModal();
-		return modal;
 	}
-};
+}
