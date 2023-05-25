@@ -139,7 +139,7 @@ header {
 	position: fixed;
 	width: calc(100% + 1.5vw);
 	margin-left: -1.5vw;
-	border-bottom: 1vh solid var(--border-color);
+	border-bottom: .5vh solid var(--border-color);
 	background-color: var(--secondary-color);
 	z-index: 10;
 }
