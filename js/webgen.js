@@ -57,7 +57,7 @@ class Modal {
 	}
 
 	static yesNoCancel(id, onYes = ()=>{}, onNo = ()=>{}, onCancel = ()=>{}) {
-		return Modal.custom(
+		return this.custom(
 			id, [{
 				text: "YES",
 				action: onYes
