@@ -9,14 +9,19 @@
 	to		{filter: opacity(100%);}
 }
 
-@keyframes darken {
-	from	{filter: brightness(100%);}
-	to		{filter: brightness(50%);}
+@keyframes fade-out {
+	from	{filter: opacity(100%);}
+	to		{filter: opacity(0%);}
 }
 
-@keyframes lighten {
+@keyframes light-up {
 	from	{filter: brightness(100%);}
-	to		{filter: brightness(150%);}
+	to		{filter: brightness(0%);}
+}
+
+@keyframes daken-up {
+	from	{filter: brightness(0%);}
+	to		{filter: brightness(100%);}
 }
 
 @keyframes rotate-ccw {

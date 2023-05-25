@@ -18,12 +18,13 @@ const createModal = (id, text, buttonData = [{text:"ok",action:()=>{}}]) => {
 	modal.innerText = text;
 	let buttons = document.createElement("div");
 	buttons.className = id + "-buttons";
-	buttonData.forEach(bd => {
+	buttonData.forEach(btn => {
 		let button = document.createElement("button");
 		button.innerText	= bd.text;
-		button.onclick		= (e) => {bd.action(); modal.close()};
+		button.onclick		= (e) => {btn.action(); modal.close()};
 		buttons.appendChild(button);
 	});
+	modal.onclose = (e) => {modal.remove()};
 	modal.appendChild(buttons);
 	document.body.appendChild(modal);
 	modal.showModal();

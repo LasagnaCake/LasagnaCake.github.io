@@ -63,6 +63,7 @@ dialog {
 	max-width: 320px;
 	top: 50%;
 	z-index: 50;
+	animation: fade-in .25s ease;
 }
 
 button {
