@@ -119,8 +119,8 @@ button:disabled {
 
 header {
 	position: fixed;
-	width: 100%;
-	margin-top: auto;
+	width: calc(100% + 1.5vw);
+	margin-left: -1.5vw;
 	border-bottom: .3vh solid var(--border-color);
 	background-color: var(--secondary-color);
 	z-index: 10;
@@ -128,7 +128,8 @@ header {
 
 .padder {
 	position: fixed;
-	width: 100%;
+	width: calc(100% + 1.5vw);
+	margin-left: -1.5vw;
 	height: 2vh;
 	margin-top: -10vw;
 	border-bottom: .3vh solid var(--border-color);
