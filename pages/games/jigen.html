@@ -7,78 +7,78 @@
 	<title>Jigen Project</title>
 	<link rel="icon" href="res/img/MagicCircleRainbowPolarVOID.png"/>
 	<link rel="stylesheet" href="../../css/default.css">
-</head>
 
-<style>
-	/*.game-card {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
-		align-content: stretch;
-	}*/
-
-	.game-anchor {
-		color: white;
-		text-shadow:
-			-2px -2px 1px black,
-			2px -2px 1px black,
-			-2px 2px 1px black,
-			2px 2px 1px black,
-			0px 2.5px 1px black,
-			0px -2.5px 1px black,
-			-2.5px 0px 1px black,
-			2.5px 0px 1px black
-		;
-	}
-
-	.game-anchor:hover {
-		filter: drop-shadow(5px 5px 1px black);
-	}
-
-	.jg-01 {
-		/*CSS Hack BEGIN*/
-		background-color: black;
-		background-image:
-			linear-gradient(45deg, red 25.5%, transparent 25.5%),
-			linear-gradient(45deg, transparent 74.5%, red 74.5%),
-			linear-gradient(45deg, transparent 74.5%, red 74.5%),
-			linear-gradient(45deg, red 25.5%, transparent 25.5%)
-		;
-		background-size: 20vh 20vh;
-   		background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
-		/*CSS Hack END*/
-		border-color: white;
-		color: white;
-		background-repeat: repeat;
-	}
-
-	.jg-02 {
-		background-image: linear-gradient(
-			45deg,
-			red,
-			orange,
-			yellow,
-			lime,
-			cyan,
-			blue,
-			purple
-		);
-		border-color: white;
-	}
-
-	.billboard {
-		margin-top: 5vh;
-		margin-bottom: 1vh;
-	}
-
-	@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
-		.billboard {
-			margin-top: 12.5%;
+	<style>
+		/*.game-card {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			align-content: stretch;
+		}*/
+	
+		.game-anchor {
+			color: white;
+			text-shadow:
+				-2px -2px 1px black,
+				2px -2px 1px black,
+				-2px 2px 1px black,
+				2px 2px 1px black,
+				0px 2.5px 1px black,
+				0px -2.5px 1px black,
+				-2.5px 0px 1px black,
+				2.5px 0px 1px black
+			;
 		}
-	}
-</style>
+	
+		.game-anchor:hover {
+			filter: drop-shadow(5px 5px 1px black);
+		}
+	
+		.jg-01 {
+			/*CSS Hack BEGIN*/
+			background-color: black;
+			background-image:
+				linear-gradient(45deg, red 25.5%, transparent 25.5%),
+				linear-gradient(45deg, transparent 74.5%, red 74.5%),
+				linear-gradient(45deg, transparent 74.5%, red 74.5%),
+				linear-gradient(45deg, red 25.5%, transparent 25.5%)
+			;
+			background-size: 20vh 20vh;
+			   background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
+			/*CSS Hack END*/
+			border-color: white;
+			color: white;
+			background-repeat: repeat;
+		}
+	
+		.jg-02 {
+			background-image: linear-gradient(
+				45deg,
+				red,
+				orange,
+				yellow,
+				lime,
+				cyan,
+				blue,
+				purple
+			);
+			border-color: white;
+		}
+	
+		.billboard {
+			margin-top: 5vh;
+			margin-bottom: 1vh;
+		}
+	
+		@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+			.billboard {
+				margin-top: 12.5%;
+			}
+		}
+	</style>
+</head>
 
 <script>
 	function secret() {

@@ -7,38 +7,19 @@
 	<title>次元誇り虹</title>
 	<link rel="icon" href="res/img/MagicCircleRainbowPolarVOID.png"/>
 	<link rel="stylesheet" href="../../../css/gamepage.css">
-</head>
 
-<style>
-	:root {
-		--primary-color: white;
-		--secondary-color: black; 
-		--primary-button-color: orange;
-		--secondary-button-color: rgb(159, 103, 0);
-		--primary-accent-color: black;
-		--secondary-accent-color: white;
-		--body-background-color: var(--secondary-accent-color);
-		--border-color: var(--secondary-accent-color);
-		--popup-color: var(--primary-accent-color);
-		--rainbow: linear-gradient(
-			45deg,
-			red,
-			orange,
-			yellow,
-			lime,
-			cyan,
-			blue,
-			purple
-		);
-	}
-
-	.game-title, .card {
-		/*background:
-			linear-gradient(
-				var(--secondary-color),
-				var(--secondary-color)
-			) padding-box,
-    		linear-gradient(
+	<style>
+		:root {
+			--primary-color: white;
+			--secondary-color: black; 
+			--primary-button-color: orange;
+			--secondary-button-color: rgb(159, 103, 0);
+			--primary-accent-color: black;
+			--secondary-accent-color: white;
+			--body-background-color: var(--secondary-accent-color);
+			--border-color: var(--secondary-accent-color);
+			--popup-color: var(--primary-accent-color);
+			--rainbow: linear-gradient(
 				45deg,
 				red,
 				orange,
@@ -47,77 +28,96 @@
 				cyan,
 				blue,
 				purple
-			) border-box
-		;*/
-		border-style: solid;
-		border-color: var(--border-color);
-		background-image: var(--rainbow);
-	}
-
-	body {
-		text-shadow:
-			-2px -2px 1px black,
-			2px -2px 1px black,
-			-2px 2px 1px black,
-			2px 2px 1px black,
-			0px 2.5px 1px black,
-			0px -2.5px 1px black,
-			-2.5px 0px 1px black,
-			2.5px 0px 1px black
-		;
-		background-color: navy;
-	}
+			);
+		}
 	
-	/*CSS Hack BEGIN*/
-	.gambiarra {
-		z-index: 0;
-		background-color: transparent;
-	}
-
-	.gambiarra:before {
-  		content: "";
-		z-index: -1;
-		height: 105vh;
-		top: 0;
-		left: 0;
-		right: 0;
-		position: absolute;
-		background-image:
-			url("../../../res/img/backgrounds/stars.png"),
-			linear-gradient(
-				180deg,
-				black,
-				black
-			)
-		;
-		mask-repeat: no-repeat;
-		mask-mode: alpha;
-		mask-size: cover;
-		mask-image: 
-			linear-gradient(
-				180deg,
-				white,
-				transparent
-			)
-		;
-	}
-	/*CSS Hack END*/
-
-	.link-card-anchor {
-		text-shadow:
-			/*-1px -1px 1px black,
-			1px -1px 1px black,
-			-1px 1px 1px black,
-			1px 1px 1px black,
-			0px 1.5px 1px black,
-			0px -1.5px 1px black,
-			-1.5px 0px 1px black,
-			1.5px 0px 1px black
-		*/none;
-		font-weight: bold;
-		border-color: var(--border-color);
-	}
-</style>
+		.game-title, .card {
+			/*background:
+				linear-gradient(
+					var(--secondary-color),
+					var(--secondary-color)
+				) padding-box,
+				linear-gradient(
+					45deg,
+					red,
+					orange,
+					yellow,
+					lime,
+					cyan,
+					blue,
+					purple
+				) border-box
+			;*/
+			border-style: solid;
+			border-color: var(--border-color);
+			background-image: var(--rainbow);
+		}
+	
+		body {
+			text-shadow:
+				-2px -2px 1px black,
+				2px -2px 1px black,
+				-2px 2px 1px black,
+				2px 2px 1px black,
+				0px 2.5px 1px black,
+				0px -2.5px 1px black,
+				-2.5px 0px 1px black,
+				2.5px 0px 1px black
+			;
+			background-color: navy;
+		}
+		
+		/*CSS Hack BEGIN*/
+		.gambiarra {
+			z-index: 0;
+			background-color: transparent;
+		}
+	
+		.gambiarra:before {
+			  content: "";
+			z-index: -1;
+			height: 105vh;
+			top: 0;
+			left: 0;
+			right: 0;
+			position: absolute;
+			background-image:
+				url("../../../res/img/backgrounds/stars.png"),
+				linear-gradient(
+					180deg,
+					black,
+					black
+				)
+			;
+			mask-repeat: no-repeat;
+			mask-mode: alpha;
+			mask-size: cover;
+			mask-image: 
+				linear-gradient(
+					180deg,
+					white,
+					transparent
+				)
+			;
+		}
+		/*CSS Hack END*/
+	
+		.link-card-anchor {
+			text-shadow:
+				/*-1px -1px 1px black,
+				1px -1px 1px black,
+				-1px 1px 1px black,
+				1px 1px 1px black,
+				0px 1.5px 1px black,
+				0px -1.5px 1px black,
+				-1.5px 0px 1px black,
+				1.5px 0px 1px black
+			*/none;
+			font-weight: bold;
+			border-color: var(--border-color);
+		}
+	</style>
+</head>
 
 <body>
 	<div class="gambiarra">
