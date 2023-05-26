@@ -7,18 +7,74 @@
 	<title>Jigen Project</title>
 	<link rel="icon" href="res/img/MagicCircleRainbowPolarVOID.png"/>
 	<link rel="stylesheet" href="../../css/default.css">
-	<style>
-		.jg-01-a, .jg-01 {
-			background-color: #bf9353;
-			border-color: #8e6d3d;
-			color: #ffffff;
-		}
-
-		.jg-01-a:hover {
-			filter: drop-shadow(5px 5px 1px black);
-		}
-	</style>
 </head>
+
+<style>
+	.game-card {/*
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: stretch;
+	*/}
+
+	.game-anchor {
+		color: white;
+		text-shadow:
+			-2px -2px 1px black,
+			2px -2px 1px black,
+			-2px 2px 1px black,
+			2px 2px 1px black,
+			0px 2.5px 1px black,
+			0px -2.5px 1px black,
+			-2.5px 0px 1px black,
+			2.5px 0px 1px black
+		;
+	}
+
+	.game-anchor:hover {
+		filter: drop-shadow(5px 5px 1px black);
+	}
+
+	.jg-01 {
+		background-color: #bf9353;
+		border-color: white;
+		color: white;
+		background-image: linear-gradient(
+			0deg,
+			red 50%,
+			black 50%
+		);
+		background-repeat: repeat;
+		background-size: 5vw 5vh;
+	}
+
+	.jg-02 {
+		background-image: linear-gradient(
+			45deg,
+			red,
+			orange,
+			yellow,
+			lime,
+			cyan,
+			blue,
+			purple
+		);
+		border-color: white;
+	}
+
+	.billboard {
+		margin-top: 5vh;
+		margin-bottom: 1vh;
+	}
+
+	@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+		.billboard {
+			margin-top: 12.5%;
+		}
+	}
+</style>
 
 <body>
 	<div class="padder"></div>
@@ -29,9 +85,22 @@
 	<div class="billboard">
 		<div class="bbtext">Jigen Project</div>
 	</div>
-	<div class="card jg-01">
-		<a class="jg-01-a" href="jigen/01_ongakuwa.html">
-			<h1>次元音楽和:<br>Transient Magical Circus</h1>
+	<div class="card game-card jg-01">
+		<a class="game-anchor jg-01-a" href="jigen/01_ongakuwa.html">
+			<img alt="次元音楽和"/>
+			<h1>
+				次元音楽和:<br>
+				Transient Magical Circus
+			</h1>
+		</a>
+	</div><!---->
+	<div class="card game-card jg-02">
+		<a class="game-anchor jg-02-a" href="jigen/02_honkoriniji.html">
+			<img alt="次元誇り虹"/>
+			<h1>
+				次元誇り虹:<br>
+				Monochrome Colourful Mountain
+			</h1>
 		</a>
 	</div>
 </body>

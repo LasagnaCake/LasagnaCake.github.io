@@ -48,6 +48,19 @@ a:hover {
 	filter: brightness(var(--hover-hilight));
 }
 
+.download-anchor {
+	color: var(--primary-color);
+	background-color: var(--secondary-button-color);
+	padding: 1vh;
+	width: 42%;
+	display: inline-block;
+	border-radius: 1vh;
+}
+
+.download-anchor:hover {
+	filter: brightness(var(--hover-hilight));
+}
+
 .card {
 	padding: 2vh;
 	border-radius: 2.5vh;
@@ -109,7 +122,7 @@ button:disabled {
 	transition: none;
 }
 
-.socials-card {
+.link-card {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -120,7 +133,7 @@ button:disabled {
 	word-spacing: 1%;
 }
 
-.social-anchor {
+.link-card-anchor {
 	font-size: 4vh;
 	display: inline-block;
 	width: 42%;
@@ -131,7 +144,7 @@ button:disabled {
 	margin-inline: 1vh 1vh;
 }
 
-.social-anchor:hover {
+.link-card-anchor:hover {
 	filter: brightness(var(--hover-hilight));
 }
 
@@ -165,7 +178,19 @@ p {
 	margin-top: 7.5vh;
 	margin-bottom: 5vh;
 	font-size: 7vh;
+	width: 100%;
+	text-align: center;
+	display: flex;
 	animation: slide-down 1s ease;
+}
+
+.bbtext {
+	padding: 2vh;
+	border-radius: 2.5vh;
+	width: fit-content;
+	background-color: var(--secondary-color);
+	border: 1vh solid var(--border-color);
+	margin: 0px auto;
 }
 
 .bandcamp-album {
@@ -175,7 +200,7 @@ p {
 	height: 120px;
 }
 
-.album-container{
+.album-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -188,11 +213,9 @@ p {
 	font-size: 3vh;
 }
 
-.bbtext {
-	padding: 2vh;
-	border-radius: 2.5vh;
-	background-color: var(--secondary-color);
-	border: 1vh solid var(--border-color);
+.link-card-title {
+	display: inline-block;
+	width: 100%;
 }
 
 .sprite {
@@ -210,13 +233,13 @@ p {
 		margin-inline: 2vw 2vw;
 	}
 
-	.socials-card {
+	.link-card {
 		flex-direction: column;
 		word-spacing: 2vh;
 		padding-top: 5vh;
 	}
 
-	.social-anchor {
+	.link-card-anchor {
 		font-size: 3.5vh;
 		display: inline-block;
 		width: 85%;

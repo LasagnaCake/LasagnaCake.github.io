@@ -11,18 +11,48 @@
 
 <style>
 	:root {
-	--primary-color: #ffffff;
-    --secondary-color: #bf9353; 
-    --primary-button-color: #442900;
-    --secondary-button-color: #7a0000;
-    --primary-accent-color: #8e3d3d;
-    --secondary-accent-color: #8e6d3d;
-    --body-background-color: var(--secondary-accent-color);
-	--border-color: var(--secondary-accent-color);
-	--popup-color: var(--primary-accent-color);
+		--primary-color: #ffffff;
+		--secondary-color: #000000; 
+		--primary-button-color: #7a0000;
+		--secondary-button-color: #ba2424;
+		--primary-accent-color: #ffffff;
+		--secondary-accent-color: #000000;
+		--body-background-color: var(--secondary-accent-color);
+		--border-color: var(--secondary-accent-color);
+		--popup-color: var(--primary-accent-color);
 	}
+
+	body {
+		background-image: linear-gradient(
+			0deg,
+			red 50%,
+			black 50%
+		);
+		background-repeat: repeat;
+		background-size: 10vw 10vh;
+	}
+
 	header {
-	border-bottom: 1vh solid var(--border-color);
+		border-bottom: 1vh solid var(--border-color);
+	}
+	
+	.header-anchor:hover, a:hover {
+		filter: drop-shadow(3px 3px 1px black);
+	}
+
+	.billboard {
+		margin: 0px auto;
+		margin-top: 5vh;
+		margin-bottom: 0vh;
+		width: fit-content;
+		padding: 2vh;
+		justify-content: center;
+	}
+
+	@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+		.billboard {
+			margin-top: 15%;
+		}
 	}
 </style>
 
@@ -33,7 +63,9 @@
 	</header>
 	<br>
 	<div class="billboard game-title">
-		次元音楽和:<br>Transient Magical Circus
+		<span>
+			次元音楽和:<br>Transient Magical Circus
+		</span>
 	</div>
 	<div class="page">
 		<div class="card">
@@ -79,9 +111,9 @@
 				<li>Two main characters</li>
 			</ul>
 		</div>
-		<div class="card">
-			<h1>Download</h1>
-			TBA
+		<div class="card link-card">
+			<h1 class="link-card-title">Download</h1>
+			<a class="link-card-anchor">TBA</a>
 		</div>
 	</div>
 </body>
