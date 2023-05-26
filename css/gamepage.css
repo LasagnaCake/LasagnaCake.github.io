@@ -1,0 +1,22 @@
+@import url("default.css");
+
+header {
+	border-bottom: 1vh solid var(--border-color);
+}
+
+.billboard {
+	margin-top: 7vh;
+	margin-bottom: 2.5vh;
+}
+
+.game-title {
+	background-color: var(--secondary-color);
+	border-color: var(--border-color);
+	border: 1vh solid var(--border-color);
+}
+
+@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+	.billboard {
+		margin-top: 13%;
+	}
+}
