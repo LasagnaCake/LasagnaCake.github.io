@@ -38,16 +38,20 @@
 	}
 
 	.jg-01 {
-		background-color: #bf9353;
+		/*CSS Hack BEGIN*/
+		background-color: black;
+		background-image:
+			linear-gradient(45deg, red 25.5%, transparent 25.5%),
+			linear-gradient(45deg, transparent 74.5%, red 74.5%),
+			linear-gradient(45deg, transparent 74.5%, red 74.5%),
+			linear-gradient(45deg, red 25.5%, transparent 25.5%)
+		;
+		background-size: 20vh 20vh;
+   		background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
+		/*CSS Hack END*/
 		border-color: white;
 		color: white;
-		background-image: linear-gradient(
-			0deg,
-			red 50%,
-			black 50%
-		);
 		background-repeat: repeat;
-		background-size: 10vw 10vh;
 	}
 
 	.jg-02 {
@@ -76,6 +80,12 @@
 	}
 </style>
 
+<script>
+	function secret() {
+		jigen02.hidden = false;
+	}
+</script>
+
 <body>
 	<div class="padder"></div>
 	<header>
@@ -101,7 +111,7 @@
 			that plagues the land.
 		</p>
 	</div>
-	<div class="card game-card jg-01">
+	<div class="card game-card jg-01" id="jigen01">
 		<a class="game-anchor jg-01-a" href="jigen/01_ongakuwa.html">
 			<img alt="次元音楽和"/>
 			<h1>
@@ -110,15 +120,15 @@
 			</h1>
 		</a>
 	</div>
-	<!--<div class="card game-card jg-02">
-		<a class="game-anchor jg-02-a" href="jigen/02_honkoriniji.html">
+	<div class="card game-card jg-02" id="jigen02" hidden>
+		<a class="game-anchor jg-02-a" href="jigen/02_hokoriniji.html">
 			<img alt="次元誇り虹"/>
 			<h1>
 				次元誇り虹:<br>
 				Monochrome Colourful Mountain
 			</h1>
 		</a>
-	</div>-->
+	</div>
 </body>
 
 </html>

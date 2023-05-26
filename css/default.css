@@ -134,6 +134,7 @@ button:disabled {
 	color: var(--primary-color);
 	border-radius: 1vh;
 	margin-inline: 1vh 1vh;
+	padding-top: 1vh;
 }
 
 .link-card-anchor:hover {

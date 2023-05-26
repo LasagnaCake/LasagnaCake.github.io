@@ -23,13 +23,18 @@
 	}
 
 	body {
-		background-image: linear-gradient(
-			0deg,
-			red 50%,
-			black 50%
-		);
+		/*CSS Hack BEGIN*/
+		background-color: black;
+		background-image:
+			linear-gradient(45deg, red 25.5%, transparent 25.5%),
+			linear-gradient(45deg, transparent 74.5%, red 74.5%),
+			linear-gradient(45deg, transparent 74.5%, red 74.5%),
+			linear-gradient(45deg, red 25.5%, transparent 25.5%)
+		;
+		background-size: 20vh 20vh;
+   		background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
+		/*CSS Hack END*/
 		background-repeat: repeat;
-		background-size: 10vw 10vh;
 	}
 </style>
 
