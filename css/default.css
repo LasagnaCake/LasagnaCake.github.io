@@ -190,13 +190,14 @@ p {
 	background-color: var(--border-color);
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	border-radius: 2vw;
+	border-radius: 5vh;
 	margin-inline: 5vw 5vw;
 	margin: 0px auto;
 	width: fit-content;
 	padding: 2vh;
 	justify-content: center;
 	animation: slide-down 1s ease;
+	max-width: 75vw;
 }
 
 .bandcamp-album {
