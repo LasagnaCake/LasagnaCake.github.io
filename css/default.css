@@ -195,6 +195,7 @@ p {
 	width: fit-content;
 	padding: 2vh;
 	justify-content: center;
+	animation: slide-down 1s ease;
 }
 
 .bandcamp-album {
