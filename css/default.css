@@ -227,8 +227,8 @@ p {
 }
 
 .sprite {
-	width: max(20vw, 20vh);
-	height: max(20vw, 20vh);
+	width: max(35vw, 20vh);
+	height: max(35vw, 20vh);
 }
 
 @media screen and (max-width: 900px), screen and (max-device-width: 900px) {
