@@ -121,6 +121,9 @@ button:disabled {
 	justify-content: space-around;
 	align-items: center;
 	align-content: stretch;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
 	min-height: 20vh;
 	word-spacing: 1%;
 }
@@ -133,8 +136,10 @@ button:disabled {
 	border: 1vh solid var(--primary-button-color);
 	color: var(--primary-color);
 	border-radius: 1vh;
-	margin-inline: 1vh 1vh;
+	margin-inline: 1vh;
+	margin-block: 1vh;
 	padding-top: 1vh;
+	flex: 0 0 45%;
 }
 
 .link-card-anchor:hover {
@@ -215,7 +220,7 @@ p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	align-content: stretch;
 	align-items: center;
 	align-content: space-around;
 	justify-content: center;
