@@ -204,8 +204,11 @@ p {
 .bandcamp-album {
 	border: none;
 	border: 0;
-	width: max(40vh, 45%);
+	width: max(40vh, 40%);
 	height: 120px;
+	margin-inline: 1.5vw;
+	margin-block-end: 2vw;
+	flex: 0 0 45%;
 }
 
 .album-container {
@@ -215,6 +218,9 @@ p {
 	justify-content: space-around;
 	align-items: center;
 	align-content: space-around;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
 }
 
 .page {
