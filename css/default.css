@@ -21,7 +21,7 @@ hr {
 body {
 	background-color: var(--body-background-color);
 	color: var(--primary-color);
-	font-family: powerr-font, Arial;
+	font-family: powerr-font, "Courier New", monospace;
 	font-size: 4vh;
 	display: flexbox;
 	text-align: center;
@@ -216,7 +216,7 @@ p {
 	flex: 0 0 45%;
 }
 
-.album-section {
+.content-section {
 	background-color: var(--secondary-accent-shadow-color);
 	border-radius: 10px;
 	padding-top: 1vh;

@@ -99,11 +99,11 @@
 }
 
 @font-face {
-	font-family: uooi;
+	font-family: u001;
 	src: url("u001-font/u001-reg.ttf");
 }
 
 @font-face {
-	font-family: uooi-condensed;
-	src: url("u001-font/u001-con.ttf");
+	font-family: u001-condensed;
+	src: url("u001-font/u001-con-reg.ttf");
 }
