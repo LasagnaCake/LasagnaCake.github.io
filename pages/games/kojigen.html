@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kojigen Project</title>
+	<link rel="icon" href="../../res/img/jg_logo.png"/>
+	<link rel="stylesheet" href="../../css/default.css">
+
+	<style>
+		/*.game-card {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			align-content: stretch;
+		}*/
+	
+		.game-anchor {
+			color: white;
+			text-shadow:
+				-2px -2px 1px black,
+				2px -2px 1px black,
+				-2px 2px 1px black,
+				2px 2px 1px black,
+				0px 2.5px 1px black,
+				0px -2.5px 1px black,
+				-2.5px 0px 1px black,
+				2.5px 0px 1px black
+			;
+		}
+	
+		.game-anchor:hover {
+			filter: drop-shadow(5px 5px 1px black);
+		}
+
+		.jg-T-1 {
+			background-color: black;
+			background-image: url("../../res/img/backgrounds/GameBack_1024.png");
+			background-size: 100vh 100vh;
+			background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
+			border-color: white;
+			color: white;
+			background-repeat: repeat;
+			background-attachment: fixed;
+		}
+	
+		.billboard {
+			margin-top: 5vh;
+			margin-bottom: 1vh;
+		}
+	
+		@media screen and (max-width: 900px), screen and (max-device-width: 900px) {
+			.billboard {
+				margin-top: 12.5%;
+			}
+		}
+	</style>
+</head>
+
+<script>
+	function secret() {
+		let secrets = document.getElementsByClassName("game-card");
+		[].forEach.call(secrets, e=>{e.hidden=false;});
+	}
+</script>
+
+<body>
+	<div class="padder"></div>
+	<header>
+		<a class="header-anchor" href="../../works.html#games">Return</a>
+	</header>
+	<br>
+	<div class="billboard">
+		<div class="bbtext">去次元<br>Kojigen Pro&shy;ject</div>
+	</div>
+	<div class="card">
+		<img src="../../res/img/jg_logo.png" alt="Kojigen Project Logo" hidden aria-hidden="true"/>
+		<h1>Descri&shy;ption</h1>
+		<p>
+			Kojigen (lit. "Last (previous) Dimension") Project is a series of
+			games that take place before <a href="jigen.html">Jigen Project</a>,
+			its main series.
+		</p>
+		<p>
+			Follow one (or both! or...) of the protagonists in their lives
+			in the <span title="外本陸">outside world</span>, in short, one-stage
+			bullet hells as they attempt to solve a case!
+		</p>
+	</div>
+	<div class="card game-card jg-T-1" id="kojigen-1">
+		<a class="game-anchor jg-T-1-a" href="kojigen/T-1_daishiheki.html">
+			<h1>
+				去次元<wbr>第四壁:<br>
+				Obser&shy;ver's Trap
+			</h1>
+		</a>
+	</div>
+</body>
+
+</html>

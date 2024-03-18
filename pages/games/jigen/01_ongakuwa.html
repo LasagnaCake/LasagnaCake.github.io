@@ -12,8 +12,8 @@
 		:root {
 			--primary-color: white;
 			--secondary-color: black; 
-			--primary-button-color: #7a0000;
-			--secondary-button-color: #ba2424;
+			--primary-button-color: #ba2424;
+			--secondary-button-color: #7a0000;
 			--primary-accent-color: red;
 			--secondary-accent-color: white;
 			--body-background-color: var(--secondary-accent-color);
@@ -24,17 +24,18 @@
 		body {
 			/*CSS Hack BEGIN*/
 			background-color: black;
-			background-image:
+			/*background-image:
 				linear-gradient(45deg, red 25.5%, transparent 25.5%),
 				linear-gradient(45deg, transparent 74.5%, red 74.5%),
 				linear-gradient(45deg, transparent 74.5%, red 74.5%),
 				linear-gradient(45deg, red 25.5%, transparent 25.5%)
-			;
+			;*/
 			/*CSS Hack END*/
-			/*background-image: url("../../../res/img/TileBG2.png");*/
+			background-image: url("../../../res/img/TileBG2.png");
 			background-size: 20vh 20vh;
-			   background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
+			background-position:0 0, 0 0, -10vh -10vh, 10vh 10vh;
 			background-repeat: repeat;
+			background-attachment: fixed;
 		}
 	</style>
 </head>
@@ -68,9 +69,6 @@
 				- to the mythical land of Muryouriku, they come accross their first incident:
 				A circus that's being loud and boisterous, to the chagrin of the residents
 				of the land.
-			</p>
-			<p>
-				Jigen Project is inspired by Touhou Project and Len'en Project.
 			</p>
 		</div>
 		<div class="card" id="playable-characters">
