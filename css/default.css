@@ -274,9 +274,15 @@ h4 {
 	width: 100%;
 }
 
+.character-info {
+	background-color: rgba(255, 255, 255, 0.15);
+	padding: 2vh;
+	border-radius: inherit;
+}
+
 .sprite {
-	width: max(35vw, 20vh);
-	height: max(35vw, 20vh);
+	width: max(20vw, 20vh);
+	height: max(20vw, 20vh);
 }
 
 @media screen and (max-width: 900px), screen and (max-device-width: 900px) {
