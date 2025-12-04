@@ -5,5 +5,6 @@
 	--main-color: #80f;
 	--sub-color: color-mix(in oklab, var(--main-color), black);
 	--theme: color-mix(in oklab, black, var(--main-color) 20%);
-	--inverse: color-mix(in oklab, var(--main-color), white);
+	--inverse: color-mix(in oklab, var(--main-color), black 15%);
+	--text: white;
 }
