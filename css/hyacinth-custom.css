@@ -1,0 +1,9 @@
+@import url("https://lasagnacake.github.io/hyacinth-css/hyacinth/hyacinth.css");
+@import url("https://lasagnacake.github.io/hyacinth-css/hyacinth/fonts/ibm-plex-sans.css");
+
+.hy {
+	--main-color: #80f;
+	--sub-color: color-mix(in oklab, var(--main-color), black);
+	--theme: color-mix(in oklab, black, var(--main-color) 20%);
+	--inverse: color-mix(in oklab, var(--main-color), white);
+}
