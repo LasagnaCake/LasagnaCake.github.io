@@ -2,9 +2,46 @@
 @import url("https://lasagnacake.github.io/hyacinth-css/hyacinth/fonts/ibm-plex-sans.css");
 
 .hy {
-	--main-color: #80f;
-	--sub-color: color-mix(in oklab, var(--main-color), black);
-	--theme: color-mix(in oklab, black, var(--main-color) 20%);
-	--inverse: color-mix(in oklab, var(--main-color), black 15%);
-	--text: white;
+	--main-color: #a0f;
+}
+
+@media (prefers-color-scheme: light) {
+	.hy {
+		--sub-color: color-mix(in oklab, var(--main-color), white);
+		--theme: white;
+		--inverse: black;
+		--text: black;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hy {
+		--sub-color: color-mix(in oklab, var(--main-color), black);
+		--theme: color-mix(in oklab, black, var(--main-color) 20%);
+		--inverse: white;
+		--text: white;
+	}
+
+	.hy.button.action:hover {
+		background-color: color-mix(in oklab, var(--main-color), var(--inverse));
+		color: var(--theme);
+	}
+
+	.hy.button.action:active {
+		color: color-mix(in oklab, var(--main-color), var(--inverse));
+		background-color: color-mix(in oklab, var(--theme), var(--main-color));
+	}
+
+	h1.hy {
+		--base-color: color-mix(in oklab, var(--main-color), var(--inverse));
+		font-size: 40pt;
+		background-color: var(--sub-color);
+		color: var(--base-color);
+		border: 0.2em solid color-mix(in oklab, var(--base-color), transparent 60%);
+	}
+
+	h2.hy, h3.hy, h4.hy, h5.hy, h6.hy {
+		background-color: var(--sub-color);
+		color: color-mix(in oklab, var(--main-color), var(--inverse));
+	}
 }
